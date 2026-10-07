@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(200, 233, 226);
+}
+.nav {
+    list-style-type: none;
+    background-image: linear-gradient(to bottom right, rgb(227, 253, 245),rgb(193, 255, 253), rgb(214, 255, 248));
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    height:775px;
+}
+ul.nav li {
+    text-align:center;
+}
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: rgb(135, 203, 195);
+    text-decoration: none;
+    font-size: 45px;
+    font-family: "gothiks-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul.nav a:hover {
+    background-image: linear-gradient(to bottom right, rgb(199, 231, 222),rgb(165, 230, 227), rgb(175, 227, 218));
+    color: rgb(107, 173, 163);
+}
+.grid-container {
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+    text-align: center;
+}
+.nav-menu {
+    grid-row:1 / span 4;
+    grid-column: 1;
+}
+.main-img {
+    width: 250px;
+    height: 250px;
+    object-fit:cover;
+    border-radius:25px;
+}
+.main1 {
+    grid-row: 3;
+    grid-column: 1/ span 2;
+    padding: 20px;
+}
+.main2 {
+    grid-row: 5;
+    grid-column: 1/ span 2;
+    padding: 20px;
+}
+.sidecontent {
+    grid-column: 3;
+    grid-row: 3 / span 4;
+    padding: 20px;
+    background-color: maroon;
+}
+.support1 {
+    grid-row: 4;
+    grid-column: 1;
+    padding:20px;
+    background-color: red;
+}
+.support2 {
+    grid-row: 4;
+    grid-column: 2;
+    padding: 20px;
+    background-color: red;
+}
+h3 {
+    font-family: "gothiks-round-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 10px;
+    color:rgb(127, 189, 199)
+}
+p {
+    font-family: "gothiks-round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    color:rgb(135, 192, 189)
+}

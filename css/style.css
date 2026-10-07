@@ -1,0 +1,82 @@
+body {
+    background-color: gray;
+}
+.nav {
+    list-style-type: none;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.nav li {
+    float: left
+}
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul.nav a:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+.grid-container {
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    background-color:lightblue;
+    text-align: center;
+}
+.nav-menu {
+    grid-row:1;
+    grid-column: 1 / span 3;
+}
+.main-img {
+    grid-row: 2;
+    grid-column:  1 / span 3
+}
+.img1 {
+    max-width: 400px;
+    max-height:400px;
+}
+.main1 {
+    grid-row: 3;
+    grid-column: 1/ span 2;
+    padding: 20px;
+}
+.main2 {
+    grid-row: 5;
+    grid-column: 1/ span 2;
+    padding: 20px;
+}
+.sidecontent {
+    grid-column: 3;
+    grid-row: 3 / span 4;
+    padding: 20px;
+    background-color: maroon;
+}
+.support1 {
+    grid-row: 4;
+    grid-column: 1;
+    padding:20px;
+    background-color: red;
+}
+.support2 {
+    grid-row: 4;
+    grid-column: 2;
+    padding: 20px;
+    background-color: red;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
